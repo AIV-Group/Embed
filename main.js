@@ -34,8 +34,6 @@ function init(t, e, l = "450px", s = "550px") {
     ($.style.opacity = "0"),
     ($.style.transition = "opacity 0.2s ease-in-out"),
     ($.style.userSelect = "none"),
-    ($.style.maxHeight = "65vh"),
-    ($.style.maxWidth = "90vw"),
     $.style.setProperty("-moz-user-select", "none"),
     $.style.setProperty("-webkit-user-select", "none"),
     $.style.setProperty("-khtml-user-select", "none"),
@@ -69,19 +67,21 @@ function ready(t) {
 }
 !(function () {
   let t = document
-      .querySelector('script[data-chat-service="Salebot"][data-bot-id]')
+      .querySelector('script[data-chat-service="ChatFast"][data-bot-id]')
       .getAttribute("data-bot-id"),
     e =
       document
-        .querySelector('script[data-chat-service="Salebot"][data-bubble-color]')
+        .querySelector(
+          'script[data-chat-service="ChatFast"][data-bubble-color]'
+        )
         ?.getAttribute("data-bubble-color") ?? "rgb(57 186 248)",
     l =
       document
-        .querySelector('script[data-chat-service="Salebot"][data-chat-width]')
+        .querySelector('script[data-chat-service="ChatFast"][data-chat-width]')
         ?.getAttribute("data-chat-width") ?? "450px",
     s =
       document
-        .querySelector('script[data-chat-service="Salebot"][data-chat-height]')
+        .querySelector('script[data-chat-service="ChatFast"][data-chat-height]')
         ?.getAttribute("data-chat-height") ?? "550px";
   ready(() => init(t, e, l, s));
 })();
