@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+textarea,
+input {
+    outline: none;
+}
+.bg-custom {
+    background-image: linear-gradient(-225deg, rgb(227, 253, 245) 0%, rgb(255, 230, 250) 100%);
+}
+
+.custom-border {
+    border-top-width: 0.1px !important;
+    border-bottom-width: 0px !important;
+    border-left-width: 0px !important;
+    border-right-width: 0px !important;
+    border-style: solid;
+    border-color: #e5e7eb;
+}
+
+@media (max-width: 575px) {
+    .homepage-style .canvas {
+        width: 100% !important;
+        height: 100% !important;
+    }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+    .homepage-style .canvas {
+        width: 100% !important;
+        height: 100% !important;
+    }
+}
+@media (min-width: 678px) and (max-width: 1024px) {
+    .homepage-style .canvas {
+        width: 100% !important;
+        height: 100% !important;
+    }
+}
+.css-qbdosj-Input input {
+    border: 0px !important;
+}
+
+.ReactModal__Content{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

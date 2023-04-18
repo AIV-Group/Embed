@@ -1,0 +1,11 @@
+.conversations{
+    height: 100vh;
+}
+.history-box:hover{
+    box-shadow: 5px 5px 5px gray;
+}
+@media (max-width:500px){
+    .conversations{
+        padding:10px 20px 0 20px;
+    }
+}
