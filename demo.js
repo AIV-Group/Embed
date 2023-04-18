@@ -8,7 +8,7 @@ function init(t, e, l = "450px", s = "550px") {
     (r.style.right = "20px"),
     (r.style.width = "60px"),
     (r.style.height = "60px"),
-        (r.style.zIndex= "9999"),
+    (r.style.zIndex= "9999"),
     (r.style.backgroundColor = e),
     (r.style.borderRadius = "50%"),
     (r.style.color = "#fff"),
